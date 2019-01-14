@@ -22,7 +22,7 @@ for lis in con:
 print(ham)
 eval, evec = np.linalg.eig(ham)
 eval.sort()
-for i in range(0,nC-1):
+for i in range(0,nC):
     print("E{0} = α + {1:3.2f}β".format(i,eval[i]))
 degen = 0
 for i in range(0, len(eval) - 1):
